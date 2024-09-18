@@ -1,0 +1,29 @@
+.item{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+.fly{
+    color: black;
+}
+
+.two{
+    background-color: black;
+}
+
+.bb{
+    font-size: 25px;
+}
+.aa{
+      li {
+        display: inline;
+        padding-inline: 95px;
+      }
+}
+.fl{font-family: 	Brush Script MT;
+font-size: 50px;
+text-align: center;
+background-color: rgb(253, 229, 251);
+padding: 30px;
+}
