@@ -1,52 +1,61 @@
-body {
+/* Скидання стандартних стилів */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.item {
-    color: black;
-    font-size: 20px;
-    text-align: center;
+/* Стиль для body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
 }
 
-.fly {
-    color: black;
-}
-
-.two {
-    background-color: black;
-}
-
-.bb {
-    font-size: 25px;
-}
-
-.aa {
-    list-style-type: none; /* Прибираємо маркери */
-    padding: 0; /* Прибираємо відступи */
-}
-
-.aa li {
-    display: inline;
-    padding-inline: 95px; /* Відступи між пунктами меню */
-}
-
-.fl {
-    font-family: 'Brush Script MT', cursive; /* Вказуємо шрифт */
+/* Стилі для заголовків */
+h1.fl {
+    font-family: 'Brush Script MT', cursive;
     font-size: 50px;
     text-align: center;
     background-color: rgb(253, 229, 251);
     padding: 30px;
+    text-shadow: 2px 2px 5px gray; /* Додаємо тінь до заголовка */
 }
 
-.qq {
-    float: left;
+/* Навігаційний блок */
+nav.bb {
+    font-size: 25px;
+    background-color: #ffb6c1; /* Змінюємо фон навігації */
+    border-radius: 10px; /* Задаємо закруглені краї */
+    padding: 10px;
 }
 
+nav ul.aa {
+    list-style-type: none; /* Прибираємо маркери */
+    padding: 0;
+    display: flex; /* Горизонтальне вирівнювання */
+    justify-content: space-around;
+}
+
+nav ul.aa li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav ul.aa li a:hover {
+    background-color: #ff69b4; /* Зміна фону при наведенні */
+    color: white; /* Зміна кольору тексту */
+    transition: background-color 0.3s;
+}
+
+/* Контейнер для основного контенту */
 .container {
     display: flex;
     justify-content: space-between; /* Розміщує елементи на краях */
-    padding: 20px; /* Відступи для контейнера */
+    padding: 20px;
 }
 
 .left-column,
@@ -73,27 +82,51 @@ table {
     border-collapse: collapse; /* Об'єднує границі клітинок */
 }
 
+th {
+    background-color: #ffb6c1; /* Фон для заголовків таблиці */
+    color: white;
+}
+
 th, td {
     padding: 10px; /* Відступи в клітинках */
     border: 1px solid #000; /* Чорна межа для клітинок */
-}
-footer {
-    background-color: rgb(253, 229, 251); /* Світло-сірий фон */
-    text-align: center; /* Центруємо текст */
-    padding: 20px 0; /* Відступи */
-    position: relative; /* Якщо потрібно, щоб футер залишався внизу */
+    text-align: center;
 }
 
-footer p {
-    margin: 5px 0; /* Відступи для параграфів */
+/* Стилі для зображення */
+.photo1 img {
+    border: 5px solid #d3d3d3; /* Світло-сіра рамка */
+    border-radius: 15px;
+}
+
+/* Футер */
+footer {
+    background-color: rgb(253, 229, 251);
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
 }
 
 footer ul {
     list-style-type: none; /* Прибираємо маркери для списку */
-    padding: 0; /* Прибираємо відступи */
+    padding: 0;
 }
 
 footer ul li {
-    display: inline; /* Вирівнюємо елементи в один ряд */
-    margin: 0 10px; /* Відступи між пунктами */
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+footer ul li a:hover {
+    color: #ff69b4; /* Рожевий колір при наведенні */
+    text-decoration: underline; /* Підкреслення при наведенні */
+}
+
+footer p {
+    margin: 5px 0;
 }
