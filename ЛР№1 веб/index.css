@@ -1,29 +1,99 @@
-.item{
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.item {
     color: black;
     font-size: 20px;
     text-align: center;
 }
 
-.fly{
+.fly {
     color: black;
 }
 
-.two{
+.two {
     background-color: black;
 }
 
-.bb{
+.bb {
     font-size: 25px;
 }
-.aa{
-      li {
-        display: inline;
-        padding-inline: 95px;
-      }
+
+.aa {
+    list-style-type: none; /* Прибираємо маркери */
+    padding: 0; /* Прибираємо відступи */
 }
-.fl{font-family: 	Brush Script MT;
-font-size: 50px;
-text-align: center;
-background-color: rgb(253, 229, 251);
-padding: 30px;
+
+.aa li {
+    display: inline;
+    padding-inline: 95px; /* Відступи між пунктами меню */
+}
+
+.fl {
+    font-family: 'Brush Script MT', cursive; /* Вказуємо шрифт */
+    font-size: 50px;
+    text-align: center;
+    background-color: rgb(253, 229, 251);
+    padding: 30px;
+}
+
+.qq {
+    float: left;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Розміщує елементи на краях */
+    padding: 20px; /* Відступи для контейнера */
+}
+
+.left-column,
+.right-column {
+    flex-grow: 1; /* Обидві колонки займуть однаковий простір */
+}
+
+/* Стилі для списку квітів */
+.left-column {
+    text-align: left; /* Вирівнює текст до лівого краю */
+}
+
+.left-column ul {
+    padding: 0; /* Прибирає відступи */
+}
+
+/* Стилі для таблиці */
+.right-column {
+    text-align: left; /* Вирівнює текст у таблиці до лівого краю */
+}
+
+table {
+    width: 100%; /* Займає всю ширину колонки */
+    border-collapse: collapse; /* Об'єднує границі клітинок */
+}
+
+th, td {
+    padding: 10px; /* Відступи в клітинках */
+    border: 1px solid #000; /* Чорна межа для клітинок */
+}
+footer {
+    background-color: rgb(253, 229, 251); /* Світло-сірий фон */
+    text-align: center; /* Центруємо текст */
+    padding: 20px 0; /* Відступи */
+    position: relative; /* Якщо потрібно, щоб футер залишався внизу */
+}
+
+footer p {
+    margin: 5px 0; /* Відступи для параграфів */
+}
+
+footer ul {
+    list-style-type: none; /* Прибираємо маркери для списку */
+    padding: 0; /* Прибираємо відступи */
+}
+
+footer ul li {
+    display: inline; /* Вирівнюємо елементи в один ряд */
+    margin: 0 10px; /* Відступи між пунктами */
 }
